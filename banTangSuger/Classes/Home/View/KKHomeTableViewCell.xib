@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="topicCellID" rowHeight="298" id="KGk-i7-Jjw" customClass="KKHomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="298"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="297"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aAV-rk-OLn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="242"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的男朋友是个手机壳控" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMg-s4-jjL">
+                        <rect key="frame" x="0.0" y="250" width="320" height="20"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addToFavorite_selected" translatesAutoresizingMaskIntoConstraints="NO" id="qWu-8y-AGF">
+                        <rect key="frame" x="136" y="271" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="e2J-Wl-6eq"/>
+                            <constraint firstAttribute="width" constant="20" id="fOG-GV-41u"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6063" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gv5-sE-izH">
+                        <rect key="frame" x="159" y="270" width="86" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6ZQ-H4-fLU"/>
+                            <constraint firstAttribute="width" constant="86" id="S4r-U4-c08"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aAV-rk-OLn" secondAttribute="trailing" id="3rK-j0-DLJ"/>
+                    <constraint firstItem="gv5-sE-izH" firstAttribute="top" secondItem="RMg-s4-jjL" secondAttribute="bottom" id="J8P-JZ-LdZ"/>
+                    <constraint firstItem="RMg-s4-jjL" firstAttribute="top" secondItem="aAV-rk-OLn" secondAttribute="bottom" constant="8" id="NM0-0t-sH2"/>
+                    <constraint firstItem="RMg-s4-jjL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NVe-1i-AtQ"/>
+                    <constraint firstItem="qWu-8y-AGF" firstAttribute="top" secondItem="aAV-rk-OLn" secondAttribute="bottom" constant="29" id="Ppm-8e-hh8"/>
+                    <constraint firstItem="gv5-sE-izH" firstAttribute="centerX" secondItem="RMg-s4-jjL" secondAttribute="centerX" constant="42" id="QZe-yM-T4B"/>
+                    <constraint firstItem="RMg-s4-jjL" firstAttribute="top" secondItem="aAV-rk-OLn" secondAttribute="bottom" constant="8" id="S1O-ju-UEt"/>
+                    <constraint firstItem="gv5-sE-izH" firstAttribute="leading" secondItem="qWu-8y-AGF" secondAttribute="trailing" constant="3" id="bYp-kl-fel"/>
+                    <constraint firstItem="aAV-rk-OLn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="d9o-Ej-sG3"/>
+                    <constraint firstAttribute="trailing" secondItem="RMg-s4-jjL" secondAttribute="trailing" id="ddb-nT-Fax"/>
+                    <constraint firstAttribute="bottom" secondItem="gv5-sE-izH" secondAttribute="bottom" constant="6" id="gbg-qh-2wU"/>
+                    <constraint firstItem="aAV-rk-OLn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nDZ-ju-4Jz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImage" destination="aAV-rk-OLn" id="BRf-rx-KT7"/>
+                <outlet property="likeLabel" destination="gv5-sE-izH" id="iXa-oG-ZAP"/>
+                <outlet property="title" destination="RMg-s4-jjL" id="sWe-8u-EOc"/>
+            </connections>
+            <point key="canvasLocation" x="309" y="340"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="addToFavorite_selected" width="23" height="23"/>
+    </resources>
+</document>
