@@ -68,7 +68,7 @@
             //                NSLog(@"分页 model %@",model.mj_keyValues);
             
             //Product的数据
-            NSArray *proArray = model.product;
+        //    NSArray *proArray = model.product;
            
             //设置页面
             

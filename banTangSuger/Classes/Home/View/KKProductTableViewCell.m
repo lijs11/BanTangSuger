@@ -45,6 +45,7 @@
      // 2.创建
      if (cell == nil) {
              cell = [[KKProductTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+             cell.selectionStyle = UITableViewCellSelectionStyleNone;
          }
     return cell;
     
@@ -275,10 +276,11 @@
     NSUInteger likesCount = likesArray.count;
    
     UIImageView *lastHeaderV;
-    for (NSUInteger j = 0 ; j < (likesCount > 7 ? 7 : likesCount) ; j++) {
+    for (NSUInteger j = 0 ; j < (likesCount > 8 ? 8 : likesCount) ; j++) {
 
       
         UIImageView *userHeaderV = [[UIImageView alloc] init];
+        userHeaderV.userInteractionEnabled = YES;
         [bottowView addSubview:userHeaderV];
         NSDictionary *userHeaderDict = likesArray[j];
  
@@ -297,7 +299,7 @@
 //            }];
 //            
 //        }
-             userHeaderV.frame = CGRectMake(45 * j + 10, 15, 35, 35);
+             userHeaderV.frame = CGRectMake(40 * j + 10, 15, 30, 30);
     
         
         
@@ -313,8 +315,7 @@
         
         lastHeaderV = userHeaderV;
         
-        
-    }
+       }
     
     //3.2 分割线
     UIView *splView = [[UIView alloc] init];
@@ -355,9 +356,7 @@
         //NO USE
 //        commtBtn.titleLabel.text = @"评论";
 //        commtBtn.titleLabel.textColor = [UIColor purpleColor];
-        
-        [commtBtn setTitle:@"评论" forState:UIControlStateNormal];
-        [commtBtn setImage:[UIImage imageNamed:@"comments"] forState:UIControlStateNormal];
+
         
         
         
@@ -367,7 +366,9 @@
            
         }else if (x == 1){
             [commtBtn setTitle:@"喜欢" forState:UIControlStateNormal];
+            [commtBtn setTitle:@"已喜欢" forState:UIControlStateSelected];
             [commtBtn setImage:[UIImage imageNamed:@"addToFavoriteBtn"] forState:UIControlStateNormal];
+            [commtBtn setImage:[UIImage imageNamed:@"community_like"] forState:UIControlStateSelected];
             
         }else{
             [commtBtn setTitle:@"购买" forState:UIControlStateNormal];
@@ -406,7 +407,7 @@
     UIGraphicsBeginImageContext(image.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetLineWidth(context, 2);
-    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
+    CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
     CGRect rect = CGRectMake(inset, inset, image.size.width - inset * 2.0f, image.size.height - inset * 2.0f);
     CGContextAddEllipseInRect(context, rect);
     CGContextClip(context);

@@ -45,8 +45,8 @@
     [self addChildViewController:[[KKHomeViewController alloc] init] withImageName:@"Home_unselected" selectedImageName:@"Home_selected" tag:0];
     [self addChildViewController:[[KKDisViewController alloc] init] withImageName:@"Square_normal" selectedImageName:@"Square_selected" tag:1];
     [self addChildViewController:[[KKDisViewController alloc] init] withImageName:@"tab_publish_add" selectedImageName:@"tab_publish_add_pressed" tag:2];
-    [self addChildViewController:[[KKDisViewController alloc] init] withImageName:@"Message_normal" selectedImageName:@"Message_selected" tag:3];
-    [self addChildViewController:[[KKDisViewController alloc] init] withImageName:@"PersonCenter_unlogin" selectedImageName:nil tag:4];
+    [self addChildViewController:[[UIViewController alloc] init] withImageName:@"Message_normal" selectedImageName:@"Message_selected" tag:3];
+    [self addChildViewController:[[UIViewController alloc] init] withImageName:@"PersonCenter_unlogin" selectedImageName:nil tag:4];
     
     
 }
@@ -126,7 +126,7 @@
         return NO;
     }
     
-    if (viewController.tabBarItem.tag == 4) {
+    if ((viewController.tabBarItem.tag == 4) || (viewController.tabBarItem.tag == 3) ) {
         KKLoginViewController *loginVc = [[KKLoginViewController alloc] init];
         [self presentViewController:loginVc animated:YES completion:nil];
         return NO;

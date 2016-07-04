@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		180D4929880AC0E5432084A0 /* libPods-banTangSuger.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5DD1DD1AE8968D70D46995 /* libPods-banTangSuger.a */; };
+		B92422C71D29600A00E8705E /* KKDiscTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B92422B81D29600A00E8705E /* KKDiscTableViewCell.m */; };
+		B92422C81D29600A00E8705E /* KKDiscTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92422B91D29600A00E8705E /* KKDiscTableViewCell.xib */; };
+		B92422C91D29600A00E8705E /* KKPageCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B92422BC1D29600A00E8705E /* KKPageCollectionView.m */; };
+		B92422CA1D29600A00E8705E /* KKPageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B92422BE1D29600A00E8705E /* KKPageCollectionViewCell.m */; };
+		B92422CB1D29600A00E8705E /* KKPageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92422BF1D29600A00E8705E /* KKPageCollectionViewCell.xib */; };
+		B92422CC1D29600A00E8705E /* KKWaterFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = B92422C21D29600A00E8705E /* KKWaterFlowView.m */; };
+		B92422CD1D29600A00E8705E /* KKDoubleSeleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B92422C51D29600A00E8705E /* KKDoubleSeleView.m */; };
+		B92422CE1D29600A00E8705E /* KKDoubleSeleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92422C61D29600A00E8705E /* KKDoubleSeleView.xib */; };
+		B92422D21D29609700E8705E /* KKWaterFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B92422D01D29609700E8705E /* KKWaterFlowCell.m */; };
+		B92422D31D29609700E8705E /* KKWaterFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92422D11D29609700E8705E /* KKWaterFlowCell.xib */; };
+		B92422D61D29742200E8705E /* KKHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B92422D51D29742200E8705E /* KKHeaderReusableView.m */; };
+		B92422D91D2980E600E8705E /* KKCategory_list_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = B92422D81D2980E600E8705E /* KKCategory_list_Model.m */; };
 		B953B8791D02DAAC00E802FF /* KKSavingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B953B8781D02DAAC00E802FF /* KKSavingTool.m */; };
 		B96CD87F1D007D530097F872 /* HomeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CD87E1D007D530097F872 /* HomeCollectionCell.m */; };
 		B96CD8831D007FC60097F872 /* KKHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B96CD8811D007FC60097F872 /* KKHomeTableViewCell.m */; };
@@ -16,6 +28,7 @@
 		B9833E341D12F2C400C6974A /* KKSubViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9833E321D12F2C400C6974A /* KKSubViewController.xib */; };
 		B9833E371D12F6E000C6974A /* KKSubDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9833E361D12F6E000C6974A /* KKSubDataModel.m */; };
 		B9833E3A1D12F73900C6974A /* KKProductModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9833E391D12F73900C6974A /* KKProductModel.m */; };
+		B98ACFB71D2A054500B62037 /* KKHotRecommendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B98ACFB61D2A054500B62037 /* KKHotRecommendModel.m */; };
 		B99A46F11D144AA200A7144D /* KKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B99A46EF1D144AA200A7144D /* KKWebViewController.m */; };
 		B9A95D9B1D1FCA4C0048406D /* KKHomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A95D9A1D1FCA4C0048406D /* KKHomeScrollView.m */; };
 		B9A95D9E1D1FDD700048406D /* KKProducterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A95D9D1D1FDD700048406D /* KKProducterViewController.m */; };
@@ -80,6 +93,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B92422B71D29600A00E8705E /* KKDiscTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDiscTableViewCell.h; sourceTree = "<group>"; };
+		B92422B81D29600A00E8705E /* KKDiscTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDiscTableViewCell.m; sourceTree = "<group>"; };
+		B92422B91D29600A00E8705E /* KKDiscTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKDiscTableViewCell.xib; sourceTree = "<group>"; };
+		B92422BB1D29600A00E8705E /* KKPageCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPageCollectionView.h; sourceTree = "<group>"; };
+		B92422BC1D29600A00E8705E /* KKPageCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPageCollectionView.m; sourceTree = "<group>"; };
+		B92422BD1D29600A00E8705E /* KKPageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPageCollectionViewCell.h; sourceTree = "<group>"; };
+		B92422BE1D29600A00E8705E /* KKPageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKPageCollectionViewCell.m; sourceTree = "<group>"; };
+		B92422BF1D29600A00E8705E /* KKPageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKPageCollectionViewCell.xib; sourceTree = "<group>"; };
+		B92422C11D29600A00E8705E /* KKWaterFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWaterFlowView.h; sourceTree = "<group>"; };
+		B92422C21D29600A00E8705E /* KKWaterFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWaterFlowView.m; sourceTree = "<group>"; };
+		B92422C41D29600A00E8705E /* KKDoubleSeleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDoubleSeleView.h; sourceTree = "<group>"; };
+		B92422C51D29600A00E8705E /* KKDoubleSeleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKDoubleSeleView.m; sourceTree = "<group>"; };
+		B92422C61D29600A00E8705E /* KKDoubleSeleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKDoubleSeleView.xib; sourceTree = "<group>"; };
+		B92422CF1D29609700E8705E /* KKWaterFlowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWaterFlowCell.h; sourceTree = "<group>"; };
+		B92422D01D29609700E8705E /* KKWaterFlowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWaterFlowCell.m; sourceTree = "<group>"; };
+		B92422D11D29609700E8705E /* KKWaterFlowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KKWaterFlowCell.xib; sourceTree = "<group>"; };
+		B92422D41D29742200E8705E /* KKHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHeaderReusableView.h; sourceTree = "<group>"; };
+		B92422D51D29742200E8705E /* KKHeaderReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHeaderReusableView.m; sourceTree = "<group>"; };
+		B92422D71D2980E600E8705E /* KKCategory_list_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKCategory_list_Model.h; sourceTree = "<group>"; };
+		B92422D81D2980E600E8705E /* KKCategory_list_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKCategory_list_Model.m; sourceTree = "<group>"; };
 		B953B8771D02DAAC00E802FF /* KKSavingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKSavingTool.h; sourceTree = "<group>"; };
 		B953B8781D02DAAC00E802FF /* KKSavingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSavingTool.m; sourceTree = "<group>"; };
 		B96CD87D1D007D530097F872 /* HomeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCollectionCell.h; sourceTree = "<group>"; };
@@ -94,6 +127,8 @@
 		B9833E361D12F6E000C6974A /* KKSubDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKSubDataModel.m; sourceTree = "<group>"; };
 		B9833E381D12F73900C6974A /* KKProductModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKProductModel.h; sourceTree = "<group>"; };
 		B9833E391D12F73900C6974A /* KKProductModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKProductModel.m; sourceTree = "<group>"; };
+		B98ACFB51D2A054500B62037 /* KKHotRecommendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHotRecommendModel.h; sourceTree = "<group>"; };
+		B98ACFB61D2A054500B62037 /* KKHotRecommendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKHotRecommendModel.m; sourceTree = "<group>"; };
 		B99A46EE1D144AA200A7144D /* KKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKWebViewController.h; sourceTree = "<group>"; };
 		B99A46EF1D144AA200A7144D /* KKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKWebViewController.m; sourceTree = "<group>"; };
 		B9A95D991D1FCA4C0048406D /* KKHomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKHomeScrollView.h; sourceTree = "<group>"; };
@@ -217,6 +252,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B92422B61D29600A00E8705E /* firstPageDiscTab */ = {
+			isa = PBXGroup;
+			children = (
+				B92422B71D29600A00E8705E /* KKDiscTableViewCell.h */,
+				B92422B81D29600A00E8705E /* KKDiscTableViewCell.m */,
+				B92422B91D29600A00E8705E /* KKDiscTableViewCell.xib */,
+			);
+			path = firstPageDiscTab;
+			sourceTree = "<group>";
+		};
+		B92422BA1D29600A00E8705E /* secondPage头部 */ = {
+			isa = PBXGroup;
+			children = (
+				B92422BB1D29600A00E8705E /* KKPageCollectionView.h */,
+				B92422BC1D29600A00E8705E /* KKPageCollectionView.m */,
+				B92422BD1D29600A00E8705E /* KKPageCollectionViewCell.h */,
+				B92422BE1D29600A00E8705E /* KKPageCollectionViewCell.m */,
+				B92422BF1D29600A00E8705E /* KKPageCollectionViewCell.xib */,
+			);
+			path = "secondPage头部";
+			sourceTree = "<group>";
+		};
+		B92422C01D29600A00E8705E /* SecondPagewaterFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B92422C11D29600A00E8705E /* KKWaterFlowView.h */,
+				B92422C21D29600A00E8705E /* KKWaterFlowView.m */,
+				B92422CF1D29609700E8705E /* KKWaterFlowCell.h */,
+				B92422D01D29609700E8705E /* KKWaterFlowCell.m */,
+				B92422D11D29609700E8705E /* KKWaterFlowCell.xib */,
+				B92422D41D29742200E8705E /* KKHeaderReusableView.h */,
+				B92422D51D29742200E8705E /* KKHeaderReusableView.m */,
+			);
+			path = SecondPagewaterFlow;
+			sourceTree = "<group>";
+		};
+		B92422C31D29600A00E8705E /* tabbarDoubleSelected */ = {
+			isa = PBXGroup;
+			children = (
+				B92422C41D29600A00E8705E /* KKDoubleSeleView.h */,
+				B92422C51D29600A00E8705E /* KKDoubleSeleView.m */,
+				B92422C61D29600A00E8705E /* KKDoubleSeleView.xib */,
+			);
+			path = tabbarDoubleSelected;
+			sourceTree = "<group>";
+		};
 		B9D428271CF97DF100C527D0 = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +397,10 @@
 		B9D428691CF97F9600C527D0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B92422D71D2980E600E8705E /* KKCategory_list_Model.h */,
+				B92422D81D2980E600E8705E /* KKCategory_list_Model.m */,
+				B98ACFB51D2A054500B62037 /* KKHotRecommendModel.h */,
+				B98ACFB61D2A054500B62037 /* KKHotRecommendModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,6 +408,10 @@
 		B9D4286A1CF97F9600C527D0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B92422C31D29600A00E8705E /* tabbarDoubleSelected */,
+				B92422B61D29600A00E8705E /* firstPageDiscTab */,
+				B92422BA1D29600A00E8705E /* secondPage头部 */,
+				B92422C01D29600A00E8705E /* SecondPagewaterFlow */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -770,11 +859,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9E296D41D260AA300C7C489 /* KKTopProductViewController.xib in Resources */,
+				B92422D31D29609700E8705E /* KKWaterFlowCell.xib in Resources */,
 				B9EED46D1CF9DBC800C8D9BB /* KKLoginViewController.xib in Resources */,
 				B9D428431CF97DF100C527D0 /* LaunchScreen.storyboard in Resources */,
 				B96CD8841D007FC60097F872 /* KKHomeTableViewCell.xib in Resources */,
+				B92422CE1D29600A00E8705E /* KKDoubleSeleView.xib in Resources */,
+				B92422C81D29600A00E8705E /* KKDiscTableViewCell.xib in Resources */,
 				B9E5C8A01CFCB0D700369AD1 /* titleData in Resources */,
 				B9EF728D1CFB16C900BD3074 /* KKImageCollectionViewCell.xib in Resources */,
+				B92422CB1D29600A00E8705E /* KKPageCollectionViewCell.xib in Resources */,
 				B9833E341D12F2C400C6974A /* KKSubViewController.xib in Resources */,
 				B9EED4751CFA015500C8D9BB /* PingFang.ttf in Resources */,
 				B9D428401CF97DF100C527D0 /* Assets.xcassets in Resources */,
@@ -851,6 +944,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92422CC1D29600A00E8705E /* KKWaterFlowView.m in Sources */,
 				B96CD8831D007FC60097F872 /* KKHomeTableViewCell.m in Sources */,
 				B9EED4601CF9D26C00C8D9BB /* UIView+Extension.m in Sources */,
 				B9EF72971CFB1CBB00BD3074 /* KKTopicModel.m in Sources */,
@@ -858,8 +952,11 @@
 				B9EED45F1CF9D26C00C8D9BB /* UIView+AutoLayout.m in Sources */,
 				B9EF728B1CFB16C900BD3074 /* KKImageModel.m in Sources */,
 				B9EED45C1CF9D26C00C8D9BB /* UIButton+Extension.m in Sources */,
+				B98ACFB71D2A054500B62037 /* KKHotRecommendModel.m in Sources */,
 				B9A95DA11D2014A60048406D /* LoadingView.m in Sources */,
+				B92422CD1D29600A00E8705E /* KKDoubleSeleView.m in Sources */,
 				B99A46F11D144AA200A7144D /* KKWebViewController.m in Sources */,
+				B92422CA1D29600A00E8705E /* KKPageCollectionViewCell.m in Sources */,
 				B9EF729A1CFB1D4700BD3074 /* KKUser.m in Sources */,
 				B9EF72A31CFB20E900BD3074 /* KKTopic_recModel.m in Sources */,
 				B9EED45B1CF9D26C00C8D9BB /* UIBarButtonItem+Extension.m in Sources */,
@@ -871,18 +968,23 @@
 				B9EF72A01CFB203C00BD3074 /* KKCategory_elementModel.m in Sources */,
 				B9833E331D12F2C400C6974A /* KKSubViewController.m in Sources */,
 				B9EED4701CF9F45C00C8D9BB /* KKHomeViewController.m in Sources */,
+				B92422D21D29609700E8705E /* KKWaterFlowCell.m in Sources */,
 				B9EF728E1CFB16C900BD3074 /* KKImageScroller.m in Sources */,
+				B92422C71D29600A00E8705E /* KKDiscTableViewCell.m in Sources */,
+				B92422D61D29742200E8705E /* KKHeaderReusableView.m in Sources */,
 				B9EF72AC1CFB5DE000BD3074 /* KKTitleScrollView.m in Sources */,
 				B9EF72911CFB1C0400BD3074 /* KKRecommendModel.m in Sources */,
 				B9EF728C1CFB16C900BD3074 /* KKImageCollectionViewCell.m in Sources */,
 				B9EF72A61CFB284D00BD3074 /* HMHttpTool.m in Sources */,
 				B9EED45D1CF9D26C00C8D9BB /* UIImage+Extension.m in Sources */,
 				B9833E3A1D12F73900C6974A /* KKProductModel.m in Sources */,
+				B92422D91D2980E600E8705E /* KKCategory_list_Model.m in Sources */,
 				B9EED4731CF9F48600C8D9BB /* KKDisViewController.m in Sources */,
 				B9EED46C1CF9DBC800C8D9BB /* KKLoginViewController.m in Sources */,
 				B9833E371D12F6E000C6974A /* KKSubDataModel.m in Sources */,
 				B9EF88F41CFDE81700BE465E /* UINavigationBar+Extension.m in Sources */,
 				B9EED4781CFA023500C8D9BB /* KKCoverView.m in Sources */,
+				B92422C91D29600A00E8705E /* KKPageCollectionView.m in Sources */,
 				B9E296D31D260AA300C7C489 /* KKTopProductViewController.m in Sources */,
 				B9EED4651CF9D79E00C8D9BB /* KKTabBarController.m in Sources */,
 				B9EF729D1CFB1EB400BD3074 /* KKBannerModel.m in Sources */,

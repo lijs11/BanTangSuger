@@ -341,7 +341,6 @@ static const CGFloat KKTabbarBottomHeight = 49;
     }];
     [self.collectView reloadData];
 
-
 }
 
 /*UIcollectionView 懒加载**/
@@ -425,11 +424,9 @@ static const CGFloat KKTabbarBottomHeight = 49;
     NSMutableArray *dataArray = [savingTool readHistoryTopicWithRow:self.selectedItem];
     
     if (dataArray.count > 0) {//有值
-     //   NSLogg(@"本地数据");
+     
        //取模型赋值
         KKTopicModel *topic = dataArray[indexPath.row];
-        //赋值给第二个页面
-//        subVc.topic = topic;
         
         if (topic) {//请求数据发给subVc
             
@@ -483,7 +480,7 @@ static const CGFloat KKTabbarBottomHeight = 49;
 #pragma mark - KKImageScrollerDelegate
 - (void)imageScroller:(KKImageScroller *)imageScroller didClickedAtIndex:(NSInteger)index{
     
-    NSLog(@"imageScroller click %ld picture",index);
+    NSLogg(@"imageScroller click %ld picture",index);
     
     KKBannerModel *bamodel =  self.newses[index];
     KKTopProductViewController *topProductVc = [[KKTopProductViewController alloc] init];

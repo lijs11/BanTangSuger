@@ -111,7 +111,7 @@
     
     self.layout.itemSize = CGSizeMake(self.width, self.height);
     
-    NSLog(@"self.layout.itemSize-----------%f,%f",self.layout.itemSize.width,self.layout.itemSize.height);
+  //  NSLog(@"self.layout.itemSize-----------%f,%f",self.layout.itemSize.width,self.layout.itemSize.height);
 }
 
 

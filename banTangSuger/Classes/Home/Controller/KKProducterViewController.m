@@ -14,7 +14,7 @@
 #import "KKHomeScrollView.h"
 #import "KKTitleScrollView.h"
 #import "UITableView+FDTemplateLayoutCell.h"
-
+#import "KKWebViewController.h"
 
 /** 顶部图片的高度  */
 #define topImageViewHeight  0.55 * HMScreenW
@@ -308,7 +308,7 @@
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    tableView.backgroundColor = [UIColor grayColor];
+    tableView.backgroundColor = [UIColor clearColor];
     tableView.showsVerticalScrollIndicator = YES;
     self.tableView = tableView;
     
@@ -358,7 +358,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     return self.productArray.count;
-    
     
 }
 
@@ -437,6 +436,18 @@
     [bgView addSubview:titleSc];
     return  bgView;
 
+    
+}
+
+
+#pragma mark - tableView 选中
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    KKWebViewController *wbeVc = [[KKWebViewController alloc] init];
+    [self.navigationController pushViewController:wbeVc animated:YES];
+    
+     KKProductModel *productModel = self.productArray[indexPath.row];
+     wbeVc.urlStr = productModel.url;
     
 }
 

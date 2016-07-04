@@ -16,12 +16,21 @@
 @property (nonatomic , copy) NSString              * ID;
 @property (nonatomic , copy) NSString              * pic;
 @property (nonatomic , copy) NSString              * title;
-/**存放的是URL*/
+
+/**存放的是图片URL*/
 @property (nonatomic , strong) NSArray              * pics;
+
 @property (nonatomic , copy) NSString              * type;
 @property (nonatomic , copy) NSString              * likes;
 @property (nonatomic , copy) NSString              * views;
 @property (nonatomic , strong) KKUser              * user;
+
+
+@property (nonatomic,copy) NSString *type_id;
+@property (nonatomic,copy) NSString *comments;
+@property (nonatomic,copy) NSString *create_time_str;
+/**多少分钟前*/
+@property (nonatomic,copy) NSString *order_time_str;
 
 
 @end

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KKDoubleSeleView">
+            <rect key="frame" x="0.0" y="0.0" width="135" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UM0-iN-PjT">
+                    <rect key="frame" x="8" y="0.0" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="K4O-9J-dgC"/>
+                        <constraint firstAttribute="width" constant="46" id="qzD-oX-4gl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="清单">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="leftBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="gq0-J8-6WF"/>
+                    </connections>
+                </button>
+                <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgA-15-vue" userLabel="spli">
+                    <rect key="frame" x="63" y="8" width="1" height="13"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="Ql1-TU-eWc"/>
+                        <constraint firstAttribute="height" constant="13" id="nc7-qG-a8O"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knp-Eq-i8E">
+                    <rect key="frame" x="73" y="0.0" width="52" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="X17-Sr-1fx"/>
+                        <constraint firstAttribute="width" constant="52" id="jsC-7t-S8U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="单品">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="rightBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="5M6-H8-lvv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VgA-15-vue" firstAttribute="leading" secondItem="UM0-iN-PjT" secondAttribute="trailing" constant="9" id="45b-IS-Txo"/>
+                <constraint firstItem="knp-Eq-i8E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BXt-xv-9V0"/>
+                <constraint firstItem="VgA-15-vue" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Sas-hS-vSn"/>
+                <constraint firstItem="UM0-iN-PjT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="hXu-BP-RuW"/>
+                <constraint firstItem="UM0-iN-PjT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qxd-mW-YNi"/>
+                <constraint firstAttribute="trailing" secondItem="knp-Eq-i8E" secondAttribute="trailing" constant="10" id="tto-dO-K5t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftBtn" destination="UM0-iN-PjT" id="ODD-Of-ycu"/>
+                <outlet property="rightBtn" destination="knp-Eq-i8E" id="vWh-Lw-xdr"/>
+            </connections>
+            <point key="canvasLocation" x="394.5" y="159"/>
+        </view>
+    </objects>
+</document>

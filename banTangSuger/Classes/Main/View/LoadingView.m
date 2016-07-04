@@ -55,6 +55,8 @@
             [[self sharedView] startAnimating];
             break;
         }
+        
+        
     }
 
     
@@ -69,6 +71,7 @@
     
 }
 + (void)dismiss {
+   
     [[self sharedView] stopAnimating];
     [[self sharedView] removeFromSuperview];
 }
