@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KKNavigationController : UINavigationController
+@interface KKNavigationController :UINavigationController
 
 @end

@@ -141,7 +141,7 @@ static const CGFloat KKTabbarBottomHeight = 49;
     self.navigationBarAlpha = offsetY / titleScDeY;
     
     [self.navigationController.navigationBar zz_setBackgroundColor:[HMColor(231, 65, 65, 1) colorWithAlphaComponent:self.navigationBarAlpha]];
-    [self.navigationController.navigationBar zz_setElementAlpha:self.navigationBarAlpha];
+    [self.navigationController.navigationBar zz_setElementAlpha:self.navigationBarAlpha withIsNav:YES];
     
     
 }
@@ -563,7 +563,7 @@ static const CGFloat KKTabbarBottomHeight = 49;
         self.navigationBarAlpha = offsetY / titleScDeY;
         
         [self.navigationController.navigationBar zz_setBackgroundColor:[HMColor(231, 65, 65, 1) colorWithAlphaComponent:self.navigationBarAlpha]];
-        [self.navigationController.navigationBar zz_setElementAlpha:self.navigationBarAlpha];
+        [self.navigationController.navigationBar zz_setElementAlpha:self.navigationBarAlpha withIsNav:YES];
         
 //        计算
         CGFloat tabOffsetY = self.headerMainView.frame.size.height -KKNavigationBarHeight - kTitleVewHeight;
@@ -656,7 +656,7 @@ static const CGFloat KKTabbarBottomHeight = 49;
             
         } failure:^(NSError *error) {
             
-            NSLog(@"getData--error %@",error);
+            NSLogg(@"getData--error %@",error);
             
         }];
     });
@@ -727,7 +727,7 @@ static const CGFloat KKTabbarBottomHeight = 49;
         
         
     } failure:^(NSError *error) {
-        NSLog(@"listByScene--error %@",error);
+        NSLogg(@"listByScene--error %@",error);
         
     }];
     //});

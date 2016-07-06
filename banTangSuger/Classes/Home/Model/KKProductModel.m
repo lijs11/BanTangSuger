@@ -40,7 +40,7 @@
         
 //        KKProductTableViewCell *cell=[[KKProductTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"productTableViewCell"];
 //        
-        NSLog(@"我要计算高度");
+      //  NSLogg(@"我要计算高度");
         
         // 调用cell的方法计算出高度
 //        _cellHeight=[self rowHeightWithCellModel:self];

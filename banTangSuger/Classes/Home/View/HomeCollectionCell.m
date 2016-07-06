@@ -199,7 +199,7 @@
         }else{
             //JSON->模型
             KKRecDataModel *model = [KKRecDataModel mj_objectWithKeyValues:json[@"data"]];
-            //                NSLog(@"分页 model %@",model.mj_keyValues);
+            //                NSLogg(@"分页 model %@",model.mj_keyValues);
             
             //UICollectionView数据
             NSArray *toArray = model.topic;
@@ -218,7 +218,7 @@
         
         
     } failure:^(NSError *error) {
-        NSLog(@"listByScene--error %@",error);
+        NSLogg(@"listByScene--error %@",error);
         
     }];
     //});

@@ -29,7 +29,7 @@
 
 + (instancetype)cellWithTableView:(UITableView *)tableView{
     
-    NSLogg(@"self--cellWithTableView");
+   // NSLoggg(@"self--cellWithTableView");
     static NSString *identifier = @"productTableViewCell";
   //  KKProductTableViewCell *cell = [[KKProductTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
      // 1.缓存中取
@@ -63,7 +63,7 @@
     if (self) {
         
         
-        NSLogg(@"self--initWithStyle");
+      //  NSLoggg(@"self--initWithStyle");
         
 //        self.mainContentView = [[UIView alloc] init];
         
@@ -142,7 +142,7 @@
     
     _productModel = productModel;
     
-     NSLogg(@"self--setProductModel");
+   //  NSLogg(@"self--setProductModel");
     
    // NSLogg(@"setProductModel--productModel--%@",self.productModel.mj_keyValues);
     
@@ -210,7 +210,7 @@
         picImageV.backgroundColor = [UIColor whiteColor];
         [self.contentView addSubview:picImageV];
         CGFloat picH = [picDict[@"h"] floatValue] / [picDict[@"w"] floatValue] * picW;
-         NSLog(@" picH %lf ",picH);
+       //  NSLog(@" picH %lf ",picH);
 //        picImageV.width = picW;
 //        picImageV.height = picH;
         

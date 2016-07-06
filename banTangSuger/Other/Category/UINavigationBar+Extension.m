@@ -25,35 +25,47 @@ static char overlayKey;
 - (void)zz_setBackgroundColor:(UIColor *)color {
     if (!self.overlayer) {
         [self setShadowImage:[UIImage new]];
+        
         [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+        //[self setBackgroundImage:[UIImage imageNamed:@"bigShadow.png"] forBarMetrics:UIBarMetricsDefault];
         self.overlayer = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, CGRectGetHeight(self.bounds) + 20)];
         self.overlayer.userInteractionEnabled = NO;
         self.overlayer.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
         [self insertSubview:self.overlayer atIndex:0];
+       
     }
     self.overlayer.backgroundColor = color;
 }
 
-- (void)zz_setElementAlpha:(CGFloat)alpha {
-    [[self valueForKey:@"_leftViews"] enumerateObjectsUsingBlock:^(UIView *  _Nonnull view, NSUInteger idx, BOOL * _Nonnull stop) {
-        
+- (void)zz_setElementAlpha:(CGFloat)alpha withIsNav:(BOOL)isNav{
+    
+    if (isNav) {
+       
+[[self valueForKey:@"_leftViews"] enumerateObjectsUsingBlock:^(UIView *  _Nonnull view, NSUInteger idx, BOOL * _Nonnull stop) {
+
         if (alpha == 0.0) {
             view.hidden = YES;
+
         }else{
             view.hidden = NO;
             view.alpha = alpha;
         }
-        
+
     }];
     [[self valueForKey:@"_rightViews"] enumerateObjectsUsingBlock:^(UIView *  _Nonnull view, NSUInteger idx, BOOL * _Nonnull stop) {
         if (alpha == 0.0) {
             view.hidden = YES;
+
         }else{
             view.hidden = NO;
             view.alpha = alpha;
         }
     }];
     [self zz_setTitleViewAlpha:alpha];
+    
+    
+    }
+    
 }
 
 - (void)zz_setTitleViewAlpha:(CGFloat)alpha {
@@ -67,10 +79,60 @@ static char overlayKey;
 }
 
 - (void)zz_reset {
+    
     [self setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     [self setShadowImage:nil];
     [self.overlayer removeFromSuperview];
     self.overlayer = nil;
+    
+    
+    
 }
+
+
+
+
+
+//- (void)zz_setBackgroundColor:(UIColor *)color withNav:(UINavigationController *)nav{
+//    
+//    
+//    UIView *alphaView = [[UIView alloc] initWithFrame:CGRectMake(0, -20, [UIScreen mainScreen].bounds.size.width, CGRectGetHeight(self.bounds) + 20)];
+//    alphaView.backgroundColor = [UIColor blueColor];
+//    
+//    [self insertSubview:alphaView atIndex:0];
+//    [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//    
+//    
+//}
+//
+//- (void)zz_setElementAlpha:(CGFloat)alpha{
+//    
+//   
+//    [[self valueForKey:@"_rightViews"] enumerateObjectsUsingBlock:^(UIView *  _Nonnull view, NSUInteger idx, BOOL * _Nonnull stop) {
+//                if (alpha == 0.0) {
+//                    view.hidden = YES;
+//        
+//                }else{
+//                    view.hidden = NO;
+//                    view.alpha = alpha;
+//                }
+//            }];
+//    
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

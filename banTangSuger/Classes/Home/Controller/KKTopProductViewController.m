@@ -169,7 +169,7 @@
         
         
     } failure:^(NSError *error) {
-        NSLog(@"listByScene--error %@",error);
+        NSLogg(@"listByScene--error %@",error);
         
     }];
     //});
@@ -258,7 +258,7 @@
         
         
     } failure:^(NSError *error) {
-        NSLog(@"listByScene--error %@",error);
+        NSLogg(@"listByScene--error %@",error);
         
     }];
   

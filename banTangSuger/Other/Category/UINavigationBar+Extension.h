@@ -10,7 +10,7 @@
 
 @interface UINavigationBar (Extension)
 - (void)zz_setBackgroundColor:(UIColor *)color ;
-- (void)zz_setElementAlpha:(CGFloat)alpha;
+- (void)zz_setElementAlpha:(CGFloat)alpha withIsNav:(BOOL)is;
 - (void)zz_reset;
 - (void)zz_setTitleViewAlpha:(CGFloat)alpha;
 @end

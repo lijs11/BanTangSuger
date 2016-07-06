@@ -16,10 +16,14 @@
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "KKWebViewController.h"
 
+
 /** 顶部图片的高度  */
 #define topImageViewHeight  0.55 * HMScreenW
 /** TableViewCell的高度  */
 #define tableViewCellHeight  88
+
+#define CustomBarTintColor  @"ec5252"
+
 
 @interface KKProducterViewController ()<UINavigationControllerDelegate,KKTitleScrollViewDelegate,UIScrollViewDelegate,UITextViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
@@ -66,21 +70,49 @@
     [super viewWillAppear:animated];
     
     //设置滑动时navigationBar颜色
-    [self.navigationController.navigationBar zz_setBackgroundColor:[HMColor(231, 65, 65, 1) colorWithAlphaComponent:self.navigationBarAlpha]];
-    [self.navigationController.navigationBar zz_setElementAlpha:self.navigationBarAlpha];
+    UIColor *co = [self getColor:CustomBarTintColor];
+    [self.navigationController.navigationBar zz_setBackgroundColor:[co colorWithAlphaComponent:self.navigationBarAlpha]];
+    [self.navigationController.navigationBar zz_setElementAlpha:self.navigationBarAlpha withIsNav:NO];
     
+
+
+
 }
+
+- (UIColor *) getColor:(NSString *)hexColor{
+    unsigned int red, green, blue;
+    NSRange range;
+    range.length =2;
+    range.location =0;
+    [[NSScanner scannerWithString:[hexColor substringWithRange:range]]scanHexInt:&red];
+    range.location =2;
+    [[NSScanner scannerWithString:[hexColor substringWithRange:range]]scanHexInt:&green];
+    range.location =4;
+    [[NSScanner scannerWithString:[hexColor substringWithRange:range]]scanHexInt:&blue];
+    
+    return HMColor(red, green, blue, 1);
+}
+
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 //    self.scrollMainView.contentSize = CGSizeMake(self.view.width, 1500);
+    
+    
+    
 }
 
 
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
+    
+    UIColor *co = [self getColor:CustomBarTintColor];
+    [self.navigationController.navigationBar zz_setBackgroundColor:[co colorWithAlphaComponent:1.0]];
+    [self.navigationController.navigationBar zz_setElementAlpha:1.0 withIsNav:NO];
+    
     [self.navigationController.navigationBar zz_reset];
+    
 }
 
 
@@ -153,7 +185,7 @@
     
     
     self.contentMainView = [[UIView alloc] init];
-    self.contentMainView.backgroundColor = [UIColor grayColor];
+    self.contentMainView.backgroundColor = [UIColor whiteColor];
     
     self.headerMainView = [[UIView alloc] init];
     self.headerMainView.backgroundColor = [UIColor whiteColor];
@@ -188,9 +220,12 @@
     
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     
+    
+    
 }
 - (void)rightItemClicked{
     
+  
     
     
 }
@@ -325,7 +360,7 @@
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.headerMainView.mas_bottom);
         make.leading.trailing.equalTo(self.contentMainView);
-        make.bottom.mas_equalTo(self.contentMainView.mas_bottom).offset(-25);
+        make.bottom.mas_equalTo(self.contentMainView.mas_bottom).offset(0);
     }];
 
     
@@ -458,13 +493,13 @@
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     
-    
-    if ([scrollView isKindOfClass:[UICollectionView class]]) {//只能判断横向滑动
-        self.scrollMainView.scrollEnabled = NO;
-        //        CGFloat offsetY = scrollView.contentOffset.y;
-        //        NSLog(@"UICollectionView offsetY--%lf",offsetY);
-    }
-    
+//    
+//    if ([scrollView isKindOfClass:[UICollectionView class]]) {//只能判断横向滑动
+//        self.scrollMainView.scrollEnabled = NO;
+//        //        CGFloat offsetY = scrollView.contentOffset.y;
+//        //        NSLog(@"UICollectionView offsetY--%lf",offsetY);
+//    }
+//    
     
     if ([scrollView isKindOfClass:[UITableView class]]) {
         
@@ -492,23 +527,26 @@
     
     
     
-    if ([scrollView isEqual:self.scrollMainView]) {//底层的那个scrollView
+  //  if ([scrollView isEqual:self.scrollMainView]) {//底层的那个scrollView
     
     //高度
    // 图片 HMScreenW * 0.55 //间距10 Label 20 textView self.textSize + 20
     
     //设置滑动时navigationBar颜色
-    self.navigationController.navigationBarHidden = NO;
+   // self.navigationController.navigationBarHidden = NO;
     
     CGFloat offsetY = self.scrollMainView.contentOffset.y;
     CGFloat titleScDeY = CGRectGetMaxY(self.headerMainView.frame) - 64;
     
 //    NSLog(@"titleScDeY %lf   offsetY %lf",titleScDeY,offsetY);
     
+    
     self.navigationBarAlpha = MIN(1,offsetY/titleScDeY);
     
+
+    
     [self.navigationController.navigationBar zz_setBackgroundColor:[HMColor(231, 65, 65, 1) colorWithAlphaComponent:self.navigationBarAlpha]];
-    [self.navigationController.navigationBar zz_setElementAlpha:self.navigationBarAlpha];
+    [self.navigationController.navigationBar zz_setElementAlpha:self.navigationBarAlpha withIsNav:NO];
     
     
        // 计算
@@ -561,13 +599,14 @@
         }
         
         
-    }
+   // }
     
     
     
     self.scrollMainView.scrollEnabled = YES;
     
 }
+
 
 
 

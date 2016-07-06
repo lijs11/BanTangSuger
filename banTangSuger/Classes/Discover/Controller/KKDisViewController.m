@@ -150,12 +150,12 @@
         
         [HMHttpTool post:url parameters:param success:^(id json) {
             
-            //            NSLog(@"json %@",json);
+            //            NSLogg(@"json %@",json);
 //            if (![json[@"msg"] isEqualToString:@"成功"]) {
 //                [MBProgressHUD showError:@"无法获取错误，请检查网络!"];
 //            }else{
                 //JSON->模型
-                //NSLog(@"model %@",model.mj_keyValues);
+                //NSLogg(@"model %@",model.mj_keyValues);
                 //头部图片轮播数据
             NSDictionary *dataDict = json[@"data"];
             NSArray *bnanerArray = dataDict[@"banner"];
@@ -170,7 +170,7 @@
             
         } failure:^(NSError *error) {
             
-            NSLog(@"getData--error %@",error);
+            NSLogg(@"getData--error %@",error);
             
         }];
     });
@@ -192,12 +192,12 @@
         
         [HMHttpTool get:url parameters:nil success:^(id json) {
             
-            //            NSLog(@"json %@",json);
+            //            NSLogg(@"json %@",json);
         if (![json[@"msg"] isEqualToString:@"成功"]) {
                [MBProgressHUD showError:@"无法获取错误，请检查网络!"];
            }else{
             //JSON->模型
-            //NSLog(@"model %@",model.mj_keyValues);
+            //NSLogg(@"model %@",model.mj_keyValues);
             //头部图片轮播数据
             NSDictionary *dataDict = json[@"data"];
             NSArray *bnanerArray = dataDict[@"topic"];
@@ -211,7 +211,7 @@
             
         } failure:^(NSError *error) {
             
-            NSLog(@"getData--error %@",error);
+            NSLogg(@"getData--error %@",error);
             
         }];
     });
@@ -555,7 +555,7 @@
         
         [HMHttpTool get:url parameters:nil success:^(id json) {
             
-            //            NSLog(@"json %@",json);
+            //            NSLogg(@"json %@",json);
             if (![json[@"msg"] isEqualToString:@"ok"]) {
                 [MBProgressHUD showError:@"无法获取错误，请检查网络!"];
             }else{
@@ -574,7 +574,7 @@
             
         } failure:^(NSError *error) {
             
-            NSLog(@"getData--error %@",error);
+            NSLogg(@"getData--error %@",error);
             
         }];
     });
@@ -613,7 +613,7 @@
             
         } failure:^(NSError *error) {
             
-            NSLog(@"getData--error %@",error);
+            NSLogg(@"getData--error %@",error);
             
         }];
     });

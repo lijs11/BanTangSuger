@@ -12,7 +12,7 @@
 #import "KKSubDataModel.h"
 
 
-@interface KKWebViewController ()<WKNavigationDelegate>
+@interface KKWebViewController ()
 @property (nonatomic,strong)WKWebView *web;
 @property (nonatomic,strong)UILabel *titleLabel;
 
@@ -42,11 +42,12 @@
         self.web = [[WKWebView alloc] init];
         self.web.backgroundColor = [UIColor whiteColor];
         self.web.frame = self.view.bounds;
-        self.web.navigationDelegate = self;
+       // self.web.navigationDelegate = self;
         [self.view addSubview:self.web];
         self.web.frame = self.view.bounds;
         self.web.scrollView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
-        self.web.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+       // self.web.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+        
     }
     
     return _web;
@@ -57,7 +58,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.automaticallyAdjustsScrollViewInsets = NO;
+  //  self.automaticallyAdjustsScrollViewInsets = NO;
     
 }
 
@@ -158,7 +159,7 @@
         
         
     } failure:^(NSError *error) {
-        NSLog(@"listByScene--error %@",error);
+        NSLogg(@"listByScene--error %@",error);
         
     }];
     

@@ -53,7 +53,8 @@
     if (!imageUrl) return;
      _imageUrl = imageUrl;
     
-    [self.imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"8.png"]];
+   // [self.imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:@"8.png"]];
+    [self.imageView sd_setImageWithURL:[NSURL URLWithString:imageUrl]];
 }
 
 
